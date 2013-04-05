@@ -122,8 +122,8 @@
       <div class="tabbable"> <!-- Only required for left/right tabs -->
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tab1" data-toggle="tab">Aggregate Notes</a></li>
-          <li><a href="#tab2" data-toggle="tab">Aggregate Files</a></li>
           <li><a href="#tab2" data-toggle="tab">Aggregate Q&A</a></li>
+          <li><a href="#tab3" data-toggle="tab">Aggregate Files</a></li>
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="tab1">
@@ -140,9 +140,48 @@
               <button type="submit" class="btn"><i class="icon-download"></i> Download as text</button>
             </div>
           </div>
+
+          <!-- Q&A -->
           <div class="tab-pane" id="tab2">
-            <p>Howdy, I'm in Section 2.</p>
-          </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/lisa.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <b class="media-heading"><a href="#">Lisa W.</a></b>
+                <span class="pull-right muted">One day ago</span>
+                <p>How's this different than C++?? I don't get the point of all this.</p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/marko.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <b class="media-heading"><a href="#">Marko G.</a></b>
+                <span class="pull-right muted">15 hours ago</span>
+                <p>Well, in C++, the object oriented programming was an afterthought. </p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/lisa.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <b class="media-heading"><a href="#">Lisa W.</a></b>
+                <span class="pull-right muted">Just now</span>
+                <p>Ok, but why is that important? Is OOP Java's selling point?</p>
+              </div>
+            </div>
+            <!-- Post new message -->
+            <br/>
+            <div class="tab-pane active" id="tab1">
+              <textarea class="span12" rows="5" width="100%"></textarea>
+              <button class="btn btn-primary pull-right" type="button">Post</button>
+            </div>
+
+          </div><!--Q&A tab-->
+
           <div class="tab-pane" id="tab3">
             <p>Howdy, I'm in Section 2.</p>
           </div>
