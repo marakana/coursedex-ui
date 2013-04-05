@@ -43,7 +43,7 @@
           <!-- Action buttons -->
           <div class="btn-group pull-right">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-              Action
+              <img src="people/marko.jpg" width="36"/>
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
@@ -99,20 +99,55 @@
       <div class="tabbable"> <!-- Only required for left/right tabs -->
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tab1" data-toggle="tab">Notes</a></li>
-          <li><a href="#tab2" data-toggle="tab">Files</a></li>
           <li><a href="#tab2" data-toggle="tab">Q&A</a></li>
+          <li><a href="#tab3" data-toggle="tab">Files</a></li>
         </ul>
         <div class="tab-content">
+          <!-- Notes -->
           <div class="tab-pane active" id="tab1">
             <textarea class="span12" rows="10" width="100%"></textarea>
             <button class="btn btn-primary pull-right" type="button">Save</button>
           </div>
+          <!-- Q&A -->
           <div class="tab-pane" id="tab2">
-            <p>Howdy, I'm in Section 2.</p>
-          </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/lisa.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <p>How's this different than C++?? I don't get the point of all this.</p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/marko.jpg" width="48">
+              </a>
+              <div class="media-body">
+                Well, in C++, the object oriented programming was an afterthought. 
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/lisa.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <p>Ok, but why is that important? Is OOP Java's selling point?</p>
+              </div>
+            </div>
+            <!-- Post new message -->
+            <br/>
+            <div class="tab-pane active" id="tab1">
+              <textarea class="span12" rows="5" width="100%"></textarea>
+              <button class="btn btn-primary pull-right" type="button">Post</button>
+            </div>
+
+          </div><!--tab3-->
+
+          <!-- Files -->
           <div class="tab-pane" id="tab3">
-            <p>Howdy, I'm in Section 2.</p>
+            <p>Howdy, I'm in Files</p>
           </div>
+
         </div>
       </div>
 
