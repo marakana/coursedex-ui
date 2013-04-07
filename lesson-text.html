@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Coursedex - Lesson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  <!-- HTML5 video player from http://videojs.com/ -->
+  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/c/video.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Nav Bar -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- Action buttons -->
+          <div class="btn-group pull-right">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <img src="people/marko.jpg" width="36"/>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- dropdown menu links -->
+              <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+
+          <!-- Logo -->
+          <a class="brand" href="courses.html"><img src="img/logo-small.png" alt="Coursedex"/></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+
+      <!-- breadcrumb -->
+      <ul class="breadcrumb">
+        <li><a href="course.html">Java Essentials</a> <span class="divider">/</span></li>
+        <li><a href="module.html">Overview of Java</a> <span class="divider">/</span></li>
+        <li class="active">Operators in Java</li>
+      </ul>
+
+      <!-- Action buttons -->
+      <div class="btn-group pull-right">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          Action
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <!-- dropdown menu links -->
+          <li><a href="#">Rate it</a></li>
+          <li><a href="#">Mark Complete</a></li>
+          <li><a href="#">Mark Incomplete</a></li>
+        </ul>
+      </div>
+
+      <h1>Operators in Java</h1>
+
+      <!-- Text Container -->
+<div class="sect1">
+<h2 id="operators">Objectives of Operators Module</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>In this module, you will learn about various operators available to you in Java. Topics covered include:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+Arithmetic operators - including shortcut operators
+</p>
+</li>
+<li>
+<p>
+Relational operators
+</p>
+</li>
+<li>
+<p>
+Logical-boolean operators
+</p>
+</li>
+<li>
+<p>
+Bitwise operators
+</p>
+</li>
+<li>
+<p>
+Assignment operators
+</p>
+</li>
+<li>
+<p>
+Additional operators
+</p>
+</li>
+<li>
+<p>
+Operator precedence
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arithmetic_operators">Arithmetic Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:65%;
+">
+<col style="width:15%;">
+<col style="width:20%;">
+<col style="width:65%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">+</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x + y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Adds <span class="monospaced">x</span> and <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2" ><p class="tableblock"><span class="monospaced">-</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x - y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Subtracts <span class="monospaced">y</span> from <span class="monospaced">x</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">-x</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Arithmetically negates <span class="monospaced">x</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">*</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x * y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Multiplies <span class="monospaced">x</span> by <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">/</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x / y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Divides <span class="monospaced">x</span> by <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">%</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x % y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Computes the remainder of dividing <span class="monospaced">x</span> by <span class="monospaced">y</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist"><ul>
+<li>
+<p>
+In Java, you need to be aware of the <em>type</em> of the result of a binary (two-argument) arithmetic operator.
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+If either operand is of type <span class="monospaced">double</span>, the other is converted to <span class="monospaced">double</span>.
+</p>
+</li>
+<li>
+<p>
+Otherwise, if either operand is of type <span class="monospaced">float</span>, the other is converted to <span class="monospaced">float</span>.
+</p>
+</li>
+<li>
+<p>
+Otherwise, if either operand is of type <span class="monospaced">long</span>, the other is converted to <span class="monospaced">long</span>.
+</p>
+</li>
+<li>
+<p>
+Otherwise, <em>both</em> operands are converted to type <span class="monospaced">int</span>.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+For unary (single-argument) arithmetic operators:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+If the operand is of type <span class="monospaced">byte</span>, <span class="monospaced">short</span>, or <span class="monospaced">char</span>, the result is a value of type <span class="monospaced">int</span>.
+</p>
+</li>
+<li>
+<p>
+Otherwise, a unary numeric operand remains as is and is not converted.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+This can result in unexpected behavior for a newcomer to Java programming. For example, the code below results in a compilation error:
+</p>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">short</span> a <span style="color: #990000">=</span> <span style="color: #993399">1</span><span style="color: #990000">;</span>
+<span style="color: #009900">short</span> b <span style="color: #990000">=</span> <span style="color: #993399">2</span><span style="color: #990000">;</span>
+<span style="color: #009900">short</span> c <span style="color: #990000">=</span> a <span style="color: #990000">+</span> b<span style="color: #990000">;</span>        <span style="font-style: italic"><span style="color: #9A1900">// Compilation error</span></span></tt></pre></div></div>
+<div class="ulist"><ul>
+<li>
+<p>
+The reason is that the result of the addition is an <span class="monospaced">int</span> value, which cannot be stored in a variable typed <span class="monospaced">short</span> unless you explicitly cast it, as in:
+</p>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">short</span> c <span style="color: #990000">=</span> <span style="color: #990000">(</span><span style="color: #009900">short</span><span style="color: #990000">)</span> <span style="color: #990000">(</span>a <span style="color: #990000">+</span> b<span style="color: #990000">);</span></tt></pre></div></div>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+Also, there are a couple of quirks to keep in mind regarding division by 0:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+A non-zero floating-point value divided by 0 results in a signed <span class="monospaced">Infinity</span>. <span class="monospaced">0.0/0.0</span> results in <span class="monospaced">NaN</span>.
+</p>
+</li>
+<li>
+<p>
+A non-zero integral value divided by integral 0 results in an <span class="monospaced">ArithmeticException</span> thrown at runtime.
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Note" src="data:image/png;base64,
+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">
+</td>
+<td class="content">In Java, unlike C/C++, it is legal to compute the remainder of floating-point numbers. The result is the remainder after dividing the dividend by the divisor an integral number of times.
+For example, <span class="monospaced">7.9 % 1.2</span> results in <span class="monospaced">0.7</span> (approximately, given the precision of a <span class="monospaced">float</span> or <span class="monospaced">double</span> type).</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_shortcut_arithmetic_operators">Shortcut Arithmetic Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:65%;
+">
+<col style="width:15%;">
+<col style="width:20%;">
+<col style="width:65%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2" ><p class="tableblock"><span class="monospaced">++</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x++</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">y = x++;</span> is the same as<br>
+<span class="monospaced">y = x; x = x + 1;</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">++x</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">y = ++x;</span> is the same as<br>
+<span class="monospaced">x = x + 1; y = x;</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2" ><p class="tableblock"><span class="monospaced">--</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x--</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">y = x--;</span> is the same as<br>
+<span class="monospaced">y = x; x = x - 1;</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">--x</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">y = --x;</span> is the same as<br>
+<span class="monospaced">x = x - 1; y = x;</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">About the location of the shortcut operator</div>
+<div class="paragraph"><p>The location of the shortcut operator is only important if the operator is used in an expression where the operand value is assigned to another variable or returned from a method.</p></div>
+<div class="paragraph"><p>That is to say that:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>x++;</pre>
+</div></div>
+<div class="paragraph"><p>is equivalent to:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>++x;</pre>
+</div></div>
+<div class="paragraph"><p>But in an assignment:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>y = x++;</pre>
+</div></div>
+<div class="paragraph"><p>is not the same as:</p></div>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>y = ++x;</pre>
+</div></div>
+<div class="paragraph"><p>Shortcut operators are often used in <span class="monospaced">for</span> loops to increment the loop index variable (as we will see soon).</p></div>
+</div></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_string_concatenation">String Concatenation</h2>
+<div class="sectionbody">
+<div class="ulist"><ul>
+<li>
+<p>
+The plus (<span class="monospaced">+</span>) operator performs string concatenation.
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+The result is a new <span class="monospaced">String</span> object, for example:
+</p>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>String first = "George";
+String last = "Washington";
+String name = first + " " + last;       // "George Washington"</pre>
+</div></div>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+You can concatenate a <span class="monospaced">String</span> with Java primitive types.
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+Java automatically generates a <span class="monospaced">String</span> representation of the primitive value for concatenation, for example:
+</p>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>int count = 8;
+String msg = "There are " + count + " cows.";   // "There are 8 cows."</pre>
+</div></div>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+The arithmetic <span class="monospaced">+</span> operator has the same order of precedence as the <span class="monospaced">String</span> concatenation <span class="monospaced">+</span>.
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+In a complex expression, they are evaluated from left to right, unless you use parentheses to override, for example:
+</p>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>String test = 1 + 1 + " equals " + 1 + 1;       // "2 equals 11"</pre>
+</div></div>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+For other object types used as string concatenation operands, Java automatically invokes the object&#8217;s <span class="monospaced">toString()</span> method, for example:
+</p>
+<div class="literalblock">
+<div class="content monospaced">
+<pre>Date now = new Date();
+String msg = "The time is: " + now;
+// "The time is: Mon Feb 07 18:04:48 PST 2011"</pre>
+</div></div>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_relational_operators">Relational Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:65%;
+">
+<col style="width:15%;">
+<col style="width:20%;">
+<col style="width:65%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&gt;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &gt; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is greater than <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&gt;=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &gt;= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is greater than or equal to <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&lt;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &lt; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is less than <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&lt;=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &lt;= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is less than or equal to <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">==</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x == y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is equal to <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">!=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x != y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is not equal to <span class="monospaced">y</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist"><ul>
+<li>
+<p>
+Only numerical primitive types (<span class="monospaced">byte</span>, <span class="monospaced">short</span>, <span class="monospaced">char</span>, <span class="monospaced">int</span>, <span class="monospaced">float</span>, <span class="monospaced">long</span>, and <span class="monospaced">double</span>) can be compared using the ordering operators (<span class="monospaced">&gt;</span>, <span class="monospaced">&gt;=</span>, <span class="monospaced">&lt;</span>, and <span class="monospaced">&lt;=</span>). Objects and <span class="monospaced">boolean</span>s can only be tested for [in]equality (<span class="monospaced">==</span>, <span class="monospaced">!=</span>).
+</p>
+</li>
+<li>
+<p>
+Due to Java&#8217;s type safety (<span class="monospaced">boolean</span>s are not integers and vice versa), it is not possible to make the common mistake:
+</p>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">5</span><span style="color: #990000">;</span>
+<span style="color: #009900">int</span> y <span style="color: #990000">=</span> <span style="color: #993399">3</span> <span style="color: #990000">+</span> <span style="color: #993399">2</span><span style="color: #990000">;</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">// Does not compile</span></span>
+<span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span>x <span style="color: #990000">=</span> y<span style="color: #990000">)</span> <span style="color: #FF0000">{</span>
+        <span style="font-style: italic"><span style="color: #9A1900">// Do something</span></span>
+<span style="color: #FF0000">}</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">// You must use equality operator</span></span>
+<span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span>x <span style="color: #990000">==</span> y<span style="color: #990000">)</span> <span style="color: #FF0000">{</span>
+        <span style="font-style: italic"><span style="color: #9A1900">// Do something</span></span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logical_boolean_operators">Logical Boolean Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:65%;
+">
+<col style="width:15%;">
+<col style="width:20%;">
+<col style="width:65%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Evaluates to <span class="monospaced">true</span> if</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&amp;&amp;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &amp;&amp; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Both <span class="monospaced">x</span> and <span class="monospaced">y</span> are <span class="monospaced">true</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">||</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x || y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Either <span class="monospaced">x</span> or <span class="monospaced">y</span> are <span class="monospaced">true</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">!</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">!x</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x</span> is not <span class="monospaced">true</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist"><ul>
+<li>
+<p>
+All operands to these operators must be <span class="monospaced">boolean</span> values.
+</p>
+</li>
+<li>
+<p>
+The logical <span class="monospaced">&amp;&amp;</span> and <span class="monospaced">\\</span> operators are subject to <em>short circuit evaluation</em>.
+</p>
+</li>
+<li>
+<p>
+These logical operators accept <span class="monospaced">boolean</span> values only. Attempting to use numerical or other operand types results in a compilation error.
+</p>
+</li>
+<li>
+<p>
+As with many modern programming languages, Java uses <em>short circuit evaluation</em> when evaluating logical boolean operators. This means that conditional operators evaluate the second operand only when needed:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+In <span class="monospaced">x &amp;&amp; y</span>, <span class="monospaced">y</span> is evaluated only if <span class="monospaced">x</span> is <span class="monospaced">true</span>. If <span class="monospaced">x</span> is <span class="monospaced">false</span>, the expression immediately evaluates to <span class="monospaced">false</span>.
+</p>
+</li>
+<li>
+<p>
+In <span class="monospaced">x || y</span>, <span class="monospaced">y</span> is evaluated only if <span class="monospaced">x</span> is <span class="monospaced">false</span>. If <span class="monospaced">x</span> is <span class="monospaced">true</span>, the expression immediately evaluates to <span class="monospaced">true</span>.
+</p>
+</li>
+<li>
+<p>
+For example:
+</p>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> i <span style="color: #990000">=</span> <span style="color: #993399">0</span><span style="color: #990000">;</span>
+<span style="color: #009900">int</span> j <span style="color: #990000">=</span> <span style="color: #993399">5</span><span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span> <span style="color: #990000">(</span>i <span style="color: #990000">!=</span> <span style="color: #993399">0</span><span style="color: #990000">)</span> <span style="color: #990000">&amp;&amp;</span> <span style="color: #990000">((</span>j <span style="color: #990000">/</span> i<span style="color: #990000">)</span> <span style="color: #990000">&gt;</span> <span style="color: #993399">1</span><span style="color: #990000">)</span> <span style="color: #990000">)</span> <span style="color: #FF0000">{</span>
+        <span style="font-style: italic"><span style="color: #9A1900">// Do something</span></span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+</li>
+<li>
+<p>
+Because we use a logical AND (<span class="monospaced">&amp;&amp;</span>), the first expression evaluates to <span class="monospaced">false</span> and so the second expression is not tested and the overall condition is <span class="monospaced">false</span>.
+</p>
+</li>
+</ul></div>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bitwise_operators">Bitwise Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:65%;
+">
+<col style="width:15%;">
+<col style="width:20%;">
+<col style="width:65%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Evaluates to <span class="monospaced">true</span> if</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">~</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">~x</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Bitwise complement of <span class="monospaced">x</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&amp;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &amp; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">AND all bits of <span class="monospaced">x</span> and <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">|</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x | y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">OR all bits of <span class="monospaced">x</span> and <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">^</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x ^ y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">XOR all bits of <span class="monospaced">x</span> and <span class="monospaced">y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&gt;&gt;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &gt;&gt; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Shift <span class="monospaced">x</span> right by <span class="monospaced">y</span> bits, with sign extension</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&gt;&gt;&gt;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &gt;&gt;&gt; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Shift <span class="monospaced">x</span> right by <span class="monospaced">y</span> bits, with <span class="monospaced">0</span> fill</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&lt;&lt;</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &lt;&lt; y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Shift <span class="monospaced">x</span> left by <span class="monospaced">y</span> bits</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist"><ul>
+<li>
+<p>
+In general, these bitwise operators may be applied to integral values only. For the <span class="monospaced">~</span>, <span class="monospaced">&amp;</span>, <span class="monospaced">\|</span>, and <span class="monospaced">^</span> operators:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+If either operand is of type <span class="monospaced">long</span>, the other is converted to <span class="monospaced">long</span>.
+</p>
+</li>
+<li>
+<p>
+Otherwise, <em>both</em> operands are converted to type <span class="monospaced">int</span>.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+For the shift operators:
+</p>
+<div class="ulist"><ul>
+<li>
+<p>
+If the value being shifted is of type <span class="monospaced">long</span>, the result is of type <span class="monospaced">long</span>.
+</p>
+</li>
+<li>
+<p>
+Otherwise, the result is of type <span class="monospaced">int</span>.
+</p>
+</li>
+</ul></div>
+</li>
+<li>
+<p>
+For example:
+</p>
+<table class="tableblock frame-all grid-all"
+style="
+width:70%;
+">
+<col style="width:15%;">
+<col style="width:15%;">
+<col style="width:70%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top" >Operation
+ </th>
+<th class="tableblock halign-center valign-top" >Decimal Result
+ </th>
+<th class="tableblock halign-center valign-top" >Binary Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">71</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000001000111</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">5</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000000000101</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">~x</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">-72</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">11111111111111111111111110111000</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x &amp; y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">5</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000000000101</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x | y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">71</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000001000111</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x ^ y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">66</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000001000010</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x &gt;&gt; y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">2</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000000000010</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x &gt;&gt;&gt; y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">2</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000000000000010</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" ><p class="tableblock"><span class="monospaced">x &lt;&lt; y</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">2272</span></p></td>
+<td class="tableblock halign-right valign-top" ><p class="tableblock"><span class="monospaced">00000000000000000000100011100000</span></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Note" src="data:image/png;base64,
+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">
+</td>
+<td class="content">The bitwise operators may also be used with <span class="monospaced">boolean</span> values to produce a <span class="monospaced">boolean</span> result. However, you cannot combine <span class="monospaced">boolean</span> and integral operands in a bitwise expression.</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assignment_operators">Assignment Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:65%;
+">
+<col style="width:15%;">
+<col style="width:20%;">
+<col style="width:65%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Shortcut for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x = y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">+=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x += y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x + y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">-=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x -= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x - y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">*=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x *= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x * y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">/=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x /= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x / y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">%=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x %= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x % y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&amp;=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &amp;= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x &amp; y</span> (also works for <span class="monospaced">boolean</span> values)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">|=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x |= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x | y</span> (also works for <span class="monospaced">boolean</span> values)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">^=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x ^= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x ^ y</span> (also works for <span class="monospaced">boolean</span> values)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&gt;&gt;=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &gt;&gt;= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x &gt;&gt; y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&gt;&gt;&gt;=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &gt;&gt;&gt;= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x &gt;&gt;&gt; y</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">&lt;&lt;=</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">x &lt;&lt;= y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock"><span class="monospaced">x = x &lt;&lt; y</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Note" src="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAJhUlEQVRoge2ZWWycVxXHf+fce7/v
+m/GaGCde4pI0aQlJC0kRtE1L00JbLIjY4QkeUB9YHhAIJFCExAsKUkE8IAFFPIDUIqhBRSDRBUqC
+CimFFBCBpCWx02IaZ3G2SdyxPZ7vHh6+mcnSZnFjKIge6Wj8zYzvPf9z/me5d8TM+F8WfbkNuFx5
+BcDLLf/fAEZGRmx4eNh6enqsp6fHhoeHbWRk5D9aFeSlVqHNmzfb6H33sHnT7ZQmD5GfOMax6Sm+
+Pl5h1Yc+xpYtW2SBbX1ReUkRGBkZsdH77mHLW95EOv4Ms3ueJh6YYPHUFF9aljJ63z3cf//9/5FI
+vKQIDA8P293L2yhVjjH7t51ocDiviFecF46n7XzBreChhx4qNhH5t0XjJUVgx44ddGUZ9b/vIpQD
+oRQIWSDJAiFL6B9axo4dO4gxAmANWVDLG+Ln82URMRGhVCqRHxonlAPqFXWKC4r6IhI6OMjMzBN4
+/4LlTUQQEZxzZ32QJAlpmrb+p16vU6vVOHXq1AWjN18AnDj0F971vrs4OnmYJVkoDA4FCPUO172I
+Cgnt7SV++4vvsGhRJx3tJbIsRVVpsUnOBBABBVFEClKYwbKr7sTM7EIUnBcA7z21k7t49x1X8JXv
+bOWra7rw5QRtcN8PLCfvvZJvb9vJycpJpg4/hp/N0I4SMQs4Jw0A5zBXHGiCaIZIKABgpGlKjPEF
+0TpT5pUDRXiVt99+Le03r+WzuytM1gO6pB/3+o0cbxvk8yOPMjW6i2iR2lxOjJDHSDMFogmGwzQ7
+rRJAUpAENAGXIZq2AFzQpvkACCEQcahP+cRH3sKHn9zHXU+MM7rtGeD33NDXzaZynZU9gcezpUw9
+X6OzIyOakkfF4QEpPG6nDRNNEA2FSgKimETSNCXPc0II57VpXhEolUqoOrxPSLOMT330Dv5SqfKD
+NR388Y2L+caQsjITNv3pMBs3rOT56ZyZGaM+J0QUxDc0INrWUgggoRGBAOIRAt77hY1AmqaoeJxP
+cN645jVDbNn8Hj73o8fZ/af9mEE9j9y2YRXt5YzZWmRmzjj1/BwhTXAKzitOHEbeWlc0AVwDnCv8
+KoZzjotV33lTSL1HNKAuEtKM1169jM98/E6mTk3x4Nbd7Bk7TEdHRvAeVY+hmDqmZwx1kIkiqrhz
+S2zL+AbNMC6l/80LgHMOEY9oQvBCks5RKpXo7JhFxbhz42pet2aQet1YtLiDJAkIDq8BHwJmwlwO
+UaD0ojsrNKuUReIZyb9gABCHcwWFgg+0lTPyvIRToVzKWLpkMfV6REQplYvmZCj1uuBUSdJwTg8A
+XBdoCZMOsBkQBeGi/J83gBgjmABC8AlJGsjzFLMyaXDM1etEA0VR50iCx6mSZhkiijpPjEpQD+SF
+4WdJrTAewdCFB1CtVlFVVATnhMQnWJqC5aTBk+c5IIgWRoTgSZJAmiZAo1s7hwsppglI+fTiljeY
+nyHkLQotKIAYI4igzpFHISQOiwEnKTEG8hhRVZw6YjRQLfJGHcF7jleqTBw8znXr12MABnv37efY
+iSnesG4tiUsRUQwD7JIAzKsPqCqiRbVwweM04XdPjhJN+dvTBxgbn6G9q59yZx9/3HWEb33vN+zc
+/RzOJ+w/eJLtO8Z5ZNtT7PvHIUQTvvv9X/Lc/mN0d3by3fseRLQwvWh0Fy+h8wbQ2VFG1KM+xfuA
+qufo8So/fejPPD/rqJys8pvf7eLAoeNMHqnw2U9+kH3jVQ5MClMzKUla5obr13HliiEMmDx6gltv
+uY7Vr1nBQF8PJopQ9AFTt/AROFfMjCW9XTy19xB33Hodb924jr1j+/nDk3/nzTdei4jw3nfeyCOP
+bufa1y5jzeoVrcHM8HR3dfHlr/2Q+x94jFtuuh44/9B2PplXDryYLF3STXd3e+t5UXcHY89OsOH6
+NS2Qed7wpM1Rm50G4MGHH2P961Zy3bqreXrPP5mrzwLt5y6/cACq1eoLCKm+TN/SAebmfn8aUG83
+PYs7+cnPH+eqKwd5as8/edc7bi02847pmVkATk1VWbF8AOcca1Yv59DkqcYK0tCL02deACqVCldc
+0YdIwLmEPM9RV6NnUZlPf3wT6oqJcePN6wHhzTeu4/CRCrfctJ4sSxBRli7pYfHEMUSU97/7Th75
+1RP8eec+Yp5zzTVXM9DfDyogBvHS6HTJACYmJnjVoq5GFw0454gCEOnoaMfiNGZFFRFxJGkbywZ6
+i1NWoy9kWYmbb1gHKCHApuGbisVFGyoYUswa5OR5ftF56JIBjI6OMtDfWwAQ35jnc8AVpRXBohVq
+UowECKqK4RBxoE0W6gvGCcEjaOEAwEQWdpgbGxujt7erOLO2mk3R8i0Wz9EiuUGz+qlKEQEUaJbI
+4lTHmTVePKgWzpDGJGpc8CDTlEsuo88++wxXDA0UIUbAOP23KGZKjI48KnkuhcbiPbPCOBoeBikO
+Lk2VxjqNRilaAEqSZGEAbN261bZt+zW33XY7IAXXm6Ou0YhIMamaaUOl5WRrzg00viuKWWxpQUOH
+NAZFQRpD48Xlkig0MTHBB95zG+VSylz1KCbWyDOh2XyK+56IqjWMKigkUnzWnPPFFFRRLZ29SQRU
+ELOGY4pZ6LKOlM07mZ07d/KOtw1TcB4sGkTDiDQ9K1IkrKeYmQC08d7pZLSiRBpE5s7aS0XAHFEK
+AGY51Wr18g80Zmb33nsvX/z8XdSmj2AWOXhwkrxe46+79jB55Dh/3T2GxUhHextdXW2sXN7PNWtW
+IQKDA71FFBoAjIgQkVg/a5+oHrU5zIznDhxk964xKpXKggAoTlWW8+OfPorlOQ//cjsDy1bS2dFO
+W+diVly1iL6+Pqanpzl5qsL4pPHwN3/G1InDlMsZ7Z1tDA30cfWqIa5dexV9fb2YnT7UTxw4xsHJ
+o4yOjfOP8QOMjx/k4OQx7r777lY0zycXvJ02M4sxMjg4SL1eR0TYsGEDw8PD9PX10d7ejogUN3a1
+GqpKCIE8z5mdnUVVqVarbN++nba2Nvbu3csDDzyAqrJ8+atb+zjn6e/vZ/Xq1axatYq1a9fS29tL
+lmUMDQ1RKpXOm9EXvV6v1+tWr9eZnp5mZmaGWq1GjLHF62aiNZ+bnPfe45xrvTZzxMyYmZk56+LX
+zKjX661DvHOOJElIkoRSqYT3/vLvRlW15eHCa4VxzdvmpjZDfubzuXeb3vuzqCEixBhbo0NTkyS5
+PAr9L8j/96+U/w3yCoCXW14B8HLLvwDd67nwZIEPdgAAAABJRU5ErkJggg==">
+</td>
+<td class="content">
+<div class="paragraph"><p>Actually, a compound assignment expression of the form
+<em><span class="monospaced">E1</span></em> <em><span class="monospaced">op</span></em><span class="monospaced">=</span> <em><span class="monospaced">E2</span></em> is equivalent to
+<em><span class="monospaced">E1</span></em><span class="monospaced"> = (</span><em><span class="monospaced">T</span></em><span class="monospaced">) ((</span><em><span class="monospaced">E1</span></em><span class="monospaced">) </span><em><span class="monospaced">op</span></em><span class="monospaced"> (</span><em><span class="monospaced">E1</span></em><span class="monospaced">))</span>,
+where <em><span class="monospaced">T</span></em> is the type of <em><span class="monospaced">E1</span></em>.</p></div>
+<div class="paragraph"><p>For example, the following code is compiles without error:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">short</span> x <span style="color: #990000">=</span> <span style="color: #993399">3</span><span style="color: #990000">;</span>
+x <span style="color: #990000">+=</span> <span style="color: #993399">4.6</span><span style="color: #990000">;</span></tt></pre></div></div>
+<div class="paragraph"><p>and results in <span class="monospaced">x</span> having the value <span class="monospaced">7</span> because it is equivalent to:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">short</span> x <span style="color: #990000">=</span> <span style="color: #993399">3</span><span style="color: #990000">;</span>
+x <span style="color: #990000">=</span> <span style="color: #990000">(</span><span style="color: #009900">short</span><span style="color: #990000">)</span> <span style="color: #990000">(</span>x <span style="color: #990000">+</span> <span style="color: #993399">4.6</span><span style="color: #990000">);</span></tt></pre></div></div>
+</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_operators">Other Operators</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all"
+style="
+width:100%;
+">
+<col style="width:15%;">
+<col style="width:30%;">
+<col style="width:55%;">
+<thead>
+<tr>
+<th class="tableblock halign-center valign-middle" >Operator</th>
+<th class="tableblock halign-center valign-middle" >Use</th>
+<th class="tableblock halign-left valign-middle" >Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">()</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">(x + y) * z</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Require operator precedence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">?:</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">z = b ? x : y</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Equivalent to:<br>
+<span class="monospaced">if (b) { z = x; } else { z = y; }</span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">[]</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">array[0]</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Access array element</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">.</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">str.length()</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Access object method or field</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">(</span><em><span class="monospaced">type</span></em><span class="monospaced">)</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">int x = (int) 1.2;</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Cast from one type to another</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">new</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">d = new Date();</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Create a new object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">instanceof</span></p></td>
+<td class="tableblock halign-center valign-middle" ><p class="tableblock"><span class="monospaced">o instanceof String</span></p></td>
+<td class="tableblock halign-left valign-middle" ><p class="tableblock">Check for object type, returning <span class="monospaced">boolean</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Note" src="data:image/png;base64,
+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">
+</td>
+<td class="content">
+<div class="paragraph"><p>The short-cut <em>conditional operator</em> (<span class="monospaced">?:</span>) (also known as the &#8220;if-then-else operator&#8221; or the
+&#8220;ternary operator&#8221;) is used very often to make Java code more compact, so it is worthwhile to get accustomed to it.</p></div>
+<div class="paragraph"><p>For example:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">0</span><span style="color: #990000">;</span>
+<span style="color: #009900">int</span> y <span style="color: #990000">=</span> <span style="color: #993399">5</span><span style="color: #990000">;</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">// Long way</span></span>
+
+<span style="color: #009900">int</span> z1<span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span>x <span style="color: #990000">==</span> <span style="color: #993399">0</span><span style="color: #990000">)</span> <span style="color: #FF0000">{</span>
+        z1 <span style="color: #990000">=</span> <span style="color: #993399">0</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span> <span style="font-weight: bold"><span style="color: #0000FF">else</span></span> <span style="color: #FF0000">{</span>
+        z1 <span style="color: #990000">=</span> x <span style="color: #990000">/</span> y<span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">// Short-cut way</span></span>
+<span style="color: #009900">int</span> z2 <span style="color: #990000">=</span> <span style="color: #990000">(</span>x <span style="color: #990000">==</span> <span style="color: #993399">0</span><span style="color: #990000">)</span> <span style="color: #990000">?</span> <span style="color: #993399">0</span> <span style="color: #990000">:</span> x <span style="color: #990000">/</span> y<span style="color: #990000">;</span></tt></pre></div></div>
+</td>
+</tr></table>
+</div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Note" src="data:image/png;base64,
+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">
+</td>
+<td class="content">We&#8217;ll explore the other operators listed on this slide in more depth throughout this class.</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operator_precedence">Operator Precedence</h2>
+<div class="sectionbody">
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+<span class="monospaced">[]</span>, <span class="monospaced">()</span>, <span class="monospaced">.</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">++</span>, <span class="monospaced">--</span>, <span class="monospaced">~</span>, <span class="monospaced">!</span>, <span class="monospaced">(</span><em><span class="monospaced">type</span></em><span class="monospaced">)</span>, <span class="monospaced">new</span>, <span class="monospaced">-</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">*</span>, <span class="monospaced">/</span>, <span class="monospaced">%</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">+</span>, <span class="monospaced">-</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">&lt;&lt;</span>, <span class="monospaced">&gt;&gt;</span>, <span class="monospaced">&gt;&gt;&gt;</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">&lt;</span>, <span class="monospaced">&lt;=</span>, <span class="monospaced">&gt;</span>, <span class="monospaced">&gt;=</span>, <span class="monospaced">instanceof</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">==</span>, <span class="monospaced">!=</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">&amp;</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">^</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">|</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">&amp;&amp;</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">||</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">? :</span>
+</p>
+</li>
+<li>
+<p>
+<span class="monospaced">=</span>, <span class="monospaced">*=</span>, <span class="monospaced">/=</span>, <span class="monospaced">+=</span>, <span class="monospaced">-=</span>, <span class="monospaced">%=</span>, <span class="monospaced">&lt;&lt;=</span>, <span class="monospaced">&gt;&gt;=</span>, <span class="monospaced">&gt;&gt;&gt;=</span>, <span class="monospaced">&amp;=</span>, <span class="monospaced">^=</span>, <span class="monospaced">|=</span>
+</p>
+</li>
+</ol></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img alt="Note" src="data:image/png;base64,
+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">
+</td>
+<td class="content">
+<div class="paragraph"><p>Use the <span class="monospaced">()</span> operator to change precedence of operators:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt>x <span style="color: #990000">&lt;&lt;</span> <span style="color: #990000">(((((</span>x <span style="color: #990000">==</span> <span style="color: #993399">0</span> <span style="color: #990000">?</span> <span style="color: #993399">0</span> <span style="color: #990000">:</span> <span style="color: #990000">(</span>x <span style="color: #990000">/</span> y<span style="color: #990000">))</span> <span style="color: #990000">+</span> <span style="color: #993399">5</span><span style="color: #990000">)</span> <span style="color: #990000">*</span> z<span style="color: #990000">)</span> <span style="color: #990000">&gt;</span> <span style="color: #993399">4</span><span style="color: #990000">)</span> <span style="color: #990000">?</span> <span style="color: #993399">3</span> <span style="color: #990000">:</span> <span style="color: #993399">7</span><span style="color: #990000">)</span></tt></pre></div></div>
+<div class="paragraph"><p>Other than in the most trivial situations, It is always a good practice to use <span class="monospaced">()</span> to document your intentions, regardless of precedence rules.</p></div>
+<div class="paragraph"><p>For example, change:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">5</span> <span style="color: #990000">-</span> y <span style="color: #990000">*</span> <span style="color: #993399">2</span> <span style="color: #990000">&gt;</span> <span style="color: #993399">0</span> <span style="color: #990000">?</span> y <span style="color: #990000">:</span> <span style="color: #993399">2</span> <span style="color: #990000">*</span> y<span style="color: #990000">;</span></tt></pre></div></div>
+<div class="paragraph"><p>to:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0.1
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #990000">((</span><span style="color: #993399">5</span> <span style="color: #990000">-</span> <span style="color: #990000">(</span>y <span style="color: #990000">*</span> <span style="color: #993399">2</span><span style="color: #990000">))</span> <span style="color: #990000">&gt;</span> <span style="color: #993399">0</span><span style="color: #990000">)</span> <span style="color: #990000">?</span> y <span style="color: #990000">:</span> <span style="color: #990000">(</span><span style="color: #993399">2</span> <span style="color: #990000">*</span> y<span style="color: #990000">);</span></tt></pre></div></div>
+<div class="paragraph"><p>even though both lines will assign the same value to <span class="monospaced">x</span></p></div>
+</td>
+</tr></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary_of_operators_module">Summary of Operators Module</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Java, like any other language, has a set of available operators. It is for the most part similar to C, C++ and similar languages with some notable exceptions.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_review_questions">Review Questions</h2>
+<div class="sectionbody">
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+When performing arithmetic operations in Java, what is the significance of automatic conversion of types?
+</p>
+</li>
+<li>
+<p>
+What is the difference between <span class="monospaced">x++</span> and <span class="monospaced">++x</span> (assuming <span class="monospaced">int x = 0;</span>)?
+</p>
+</li>
+<li>
+<p>
+Other than addition, what else can we use the <span class="monospaced">+</span> operator for?
+</p>
+</li>
+<li>
+<p>
+What is the significance of <em>short circuit evaluation</em> when using logical operators?
+</p>
+</li>
+<li>
+<p>
+What is the modulo operator in Java?
+</p>
+</li>
+<li>
+<p>
+What is the XOR operator in Java?
+</p>
+</li>
+<li>
+<p>
+What is the difference between <span class="monospaced">&gt;&gt;</span> and <span class="monospaced">&gt;&gt;&gt;</span> operators in Java?
+</p>
+</li>
+<li>
+<p>
+What does <span class="monospaced">|=</span> do in Java?
+</p>
+</li>
+<li>
+<p>
+What is the purpose of <span class="monospaced">?:</span> operator construct in Java?
+</p>
+</li>
+</ol></div>
+</div>
+</div>
+
+
+      <!-- Tabs -->
+      <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab">Notes</a></li>
+          <li><a href="#tab2" data-toggle="tab">Q&A</a></li>
+          <li><a href="#tab3" data-toggle="tab">Files</a></li>
+        </ul>
+        <div class="tab-content">
+          <!-- Notes -->
+          <div class="tab-pane active" id="tab1">
+            <textarea class="span12" rows="10" width="100%"></textarea>
+            <button class="btn btn-primary pull-right" type="button">Save</button>
+          </div>
+          <!-- Q&A -->
+          <div class="tab-pane" id="tab2">
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/lisa.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <b class="media-heading"><a href="#">Lisa W.</a></b>
+                <span class="pull-right muted">One day ago</span>
+                <p>How's this different than C++?? I don't get the point of all this.</p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/marko.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <b class="media-heading"><a href="#">Marko G.</a></b>
+                <span class="pull-right muted">15 hours ago</span>
+                <p>Well, in C++, the object oriented programming was an afterthought. </p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="people/lisa.jpg" width="48">
+              </a>
+              <div class="media-body">
+                <b class="media-heading"><a href="#">Lisa W.</a></b>
+                <span class="pull-right muted">Just now</span>
+                <p>Ok, but why is that important? Is OOP Java's selling point?</p>
+              </div>
+            </div>
+            <!-- Post new message -->
+            <br/>
+            <div class="tab-pane active" id="tab1">
+              <textarea class="span12" rows="5" width="100%"></textarea>
+              <button class="btn btn-primary pull-right" type="button">Post</button>
+            </div>
+
+          </div><!--Q&A tab-->
+
+          <!-- Files -->
+          <div class="tab-pane" id="tab3">
+            <p>Howdy, I'm in Files</p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- pager -->
+      <ul class="pager">
+        <li class="previous">
+          <a href="#">&larr; Previous: History of Java</a>
+        </li>
+        <li class="next">
+          <a href="#">Next: Why Java &rarr;</a>
+        </li>
+      </ul>
+
+
+      <hr>
+
+      <footer>
+        <p>&copy; Marakana 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
