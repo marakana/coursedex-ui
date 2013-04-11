@@ -71,9 +71,9 @@
 
       <!-- Action buttons -->
       <div class="btn-group pull-right">
-        <button class="btn active">Not started yet</button>
+        <button class="btn">Not started yet</button>
         <button class="btn">Working on it</button>
-        <button class="btn">Done!</button>
+        <button class="btn active">Done!</button>
       </div>
 
       <h1>What Java Is</h1>
@@ -87,8 +87,10 @@
       </video>
 
 
+
       <!-- Tabs -->
       <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <br/>
         <ul class="nav nav-tabs">
           <li class="lead active"><a href="#tab1" data-toggle="tab">Notes</a></li>
           <li class="lead"><a href="#tab2" data-toggle="tab">Q&A <span class="badge badge-important">1</span></a></li>
@@ -97,8 +99,22 @@
         <div class="tab-content">
           <!-- Notes -->
           <div class="tab-pane active" id="tab1">
-            <textarea class="span12" rows="10" width="100%"></textarea>
-            <button class="btn btn-primary pull-right" type="button">Save</button>
+            <textarea class="span12" rows="10" width="100%">
+  - So, a class and and object are not the same thing: 
+    Classes are like cookie-cutters and objects are the actual cookies.
+
+  - I don't get this static vs. instance business.
+
+  - Great article on OOP: http://en.wikipedia.org/wiki/Object-oriented_programming
+
+  - Oracle has an okay tutorial: http://docs.oracle.com/javase/tutorial/java/concepts/
+
+  - What is an object: http://docs.oracle.com/javase/tutorial/java/concepts/object.html
+
+  - A video tutorial on OOP in Java and JavaEE (it's a big basic, but still a video): http://www.youtube.com/watch?v=lG8Py6h0Kfw
+
+            </textarea>
+            <button class="btn btn-primary" type="button">Save</button>
           </div>
           <!-- Q&A -->
           <div class="tab-pane" id="tab2">
@@ -135,16 +151,53 @@
             <!-- Post new message -->
             <br/>
             <div class="tab-pane active" id="tab1">
-              <textarea class="span12" rows="5" width="100%"></textarea>
-              <button class="btn btn-primary pull-right" type="button">Post</button>
+              <textarea class="span6" rows="3" width="100%"></textarea><br/>
+              <button class="btn btn-primary" type="button">Post</button>
             </div>
 
           </div><!--Q&A tab-->
 
           <!-- Files -->
           <div class="tab-pane" id="tab3">
-            <p>Howdy, I'm in Files</p>
-          </div>
+            <table class="table table-striped">
+              <th>          
+                <div class="btn-group">
+                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!-- dropdown menu links -->
+                    <li><a href="#">Upload</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Download as zip</a></li>
+                    <li><a href="#">Copy</a></li>
+                    <li><a href="#">Cut</a></li>
+                    <li><a href="#">Delete</a></li>
+
+                    <li><a href="#">Delete</a></li>
+                  </ul>
+                </div>
+              </th><th>File</th><th>Size</th><th>Last Modified</th>
+              <tr>
+                <td class="span1"> <input type="checkbox"> </td>
+                <td class="span6"> <i class="icon-folder-open"></i> <a href="#">..</a></td>
+                <td class="span2">  </td>
+                <td class="span3">  </td>
+              </tr>
+              <tr>
+                <td class="span1"> <input type="checkbox"> </td>
+                <td class="span6"> <i class="icon-file"></i> <a href="#">Code.zip</a></td>
+                <td class="span2"> 527 k </td>
+                <td class="span3"> Yesterday </td>
+              </tr>
+              <tr>
+                <td class="span1"> <input type="checkbox"> </td>
+                <td class="span6"> <i class="icon-file"></i> <a href="#">Lesson_Notes.pdf</a></td>
+                <td class="span2"> 1 Mb </td>
+                <td class="span3"> A month ago </td>
+              <tr>
+            </table>
+          </div><!-- /Files -->
 
         </div>
       </div>
