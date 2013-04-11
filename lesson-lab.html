@@ -69,16 +69,9 @@
 
       <!-- Action buttons -->
       <div class="btn-group pull-right">
-        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-          Action
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-          <!-- dropdown menu links -->
-          <li><a href="#">Rate it</a></li>
-          <li><a href="#">Mark Complete</a></li>
-          <li><a href="#">Mark Incomplete</a></li>
-        </ul>
+        <button class="btn active">Not started yet</button>
+        <button class="btn">Working on it</button>
+        <button class="btn">Done!</button>
       </div>
 
       <h1>Lab: Basic OOP in Java</h1>
@@ -202,9 +195,9 @@ For each object, print the account number and the final balance
       <!-- Tabs -->
       <div class="tabbable"> <!-- Only required for left/right tabs -->
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab1" data-toggle="tab">Notes</a></li>
-          <li><a href="#tab2" data-toggle="tab">Q&A</a></li>
-          <li><a href="#tab3" data-toggle="tab">Files</a></li>
+          <li class="lead active"><a href="#tab1" data-toggle="tab">Notes</a></li>
+          <li class="lead"><a href="#tab2" data-toggle="tab">Q&A</a></li>
+          <li class="lead"><a href="#tab3" data-toggle="tab">Files</a></li>
         </ul>
         <div class="tab-content">
           <!-- Notes -->
@@ -262,14 +255,13 @@ For each object, print the account number and the final balance
         </div>
       </div>
 
-
       <!-- pager -->
       <ul class="pager">
         <li class="previous">
-          <a href="#">&larr; Previous: History of Java</a>
+          <a href="#"><img src="img/chevron-left-big.png" alt="&larr;" /> Previous: Flow Control Statements </a>
         </li>
         <li class="next">
-          <a href="#">Next: Why Java &rarr;</a>
+          <a href="#">Next: Java Packages   <img src="img/chevron-right-big.png" alt="&rarr;" /></a>
         </li>
       </ul>
 
